@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e2e2e2;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+body {
+    background-color: #e8dcdc;
+}
+
+nav {
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid grey;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-image: url("assets/low-poly-grid-haikei\ \(1\).svg");
+
+    position: fixed;
+}
+
+h1 {
+    color: rgb(226, 64, 43);
+    position: absolute;
+    left: 20px;
+}
+
+nav ul {
+    width: 40%;
+    justify-content: space-between;
+
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+nav li {
+    transition: all 0.5s ease-in;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(226, 64, 43);
+}
+
+.product {
+    height: 320px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.18);
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.18);
+    margin-top: 20px;
+}
+
+.product img {
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h3 {
+    margin-bottom: 10px;
+}
+
+.action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.action input {
+    height: 40px;
+    width: 80px;
+    background-color: rgb(226, 64, 43);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.products {
+    padding-top: 60px;
+    display: grid;
+    width: fit-content;
+    grid-template-columns: repeat(3, 300px);
+    gap: 30px;
+    margin: auto;
+}
+
+.cart-button {
+    height: 60px;
+    width: 60px;
+    background-color: rgb(226, 64, 43);
+    border-radius: 50%;
+
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.cart-button:hover {
+    background-color: black;
+    color: rgb(160, 116, 95);
+}
+
+.modal {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 20px;
+    position: fixed;
+    top: 110px;
+    right: 20px;
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.18);
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.18);
+    transition: all 0.5s ease-in-out;
+}
+
+.modal.active {
+    height: 70vh;
+    width: 40vw;
+}
+
+.cart-item {
+    height: 60px;
+    height: 60px;
+    width: 98%;
+    background-image: url("assets/low-poly-grid-haikei.svg");
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    justify-content: space-between;
+}
+
+.cart-item .quantity {
+    display: flex;
+    width: 70px;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #e8dcdc;
+}
+
+.Totale {
+    font-weight: bold;
+    color: #121111;
+    display: flex;
+    position: absolute;
+    font-size: larger;
+    right: 170px;
+    top: 485px;
+}
